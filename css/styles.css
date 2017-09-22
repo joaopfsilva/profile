@@ -12,6 +12,10 @@
     transition: linear .1s;
 }*/
 
+#services-center {
+    padding-top: 3%;
+}
+
 h1, h2, h3 {
     margin: 0 0 15px;
     letter-spacing: .5px;
@@ -208,7 +212,7 @@ li {
     position: relative;
     top: 0;
     left: 0;
-    background: url(../images/background.jpg) top center no-repeat fixed;
+    background: url(../images/coffee_back_13.jpg) top center no-repeat fixed;
     background-size: cover;
     width: 100%;
     height: 100%}
@@ -289,7 +293,10 @@ li {
     font-style: italic;
 }
 .skills-background {
-    background: url(../images/skills-bg-img.jpg) center center no-repeat;
+    /*background: url(../images/coffee_back_14.jpg) center center no-repeat; */
+    /*background: url(../images/coffee_back_15.jpg) center center no-repeat;*/
+    /*background: url(../images/coffee_back_16.jpg) center center no-repeat;*/
+    background: url(../images/coffee_back_17.jpg) center center no-repeat;
     background-size: cover;
     padding: 0;
 }
@@ -314,7 +321,7 @@ li {
     text-transform: uppercase;
 }
 .hire-background {
-    background: url(../images/bg-img.jpg) center center no-repeat;
+    background: url(../images/coffee_back_10.jpg) center center no-repeat;
     background-size: cover;
     padding: 0;
 }
@@ -438,7 +445,7 @@ button.mfp-close:hover {
 .service-box {
     position: relative;
     padding-left: 70px;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     text-align: left;
 }
 .service-box:last-child {
@@ -459,7 +466,7 @@ button.mfp-close:hover {
     line-height: 50px;
 }
 .facts-background {
-    background: url(../images/facts-bg-img.jpg) center center no-repeat;
+    background: url(../images/coffee_back_11.jpg) center center no-repeat;
     background-size: cover;
     text-align: center;
     padding: 0;
