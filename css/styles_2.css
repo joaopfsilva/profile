@@ -231,7 +231,8 @@ li {
 }
 .home-box img {
     width: 200px;
-    height: 260px;
+    height: 200px;
+    margin-bottom: 20px;
     border-radius: 50%;
     -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .5);
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .5);
