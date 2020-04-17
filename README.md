@@ -2,7 +2,7 @@ Personal webpage with revelant information about myself.
 
 All recommendations are welcome.
 
-Donations are also welcome 
+Donations are also welcome
 BTC: 33BCPB793JhtWA7EfMhAnJuncdMG8mKfaE
 ETH: 0x0f067652010a66B4126Dd63d6ea99dD79eB12071
 !!All the donations will be used to pay the following courses:
