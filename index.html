@@ -36,11 +36,9 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Preloader -->
   <!-- Main styles -->
-  <!-- <link href="css/styles.css" rel="stylesheet"> -->
   <link href="css/styles_2.css" rel="stylesheet">
   <!-- Responsive styles -->
   <link href="css/responsive.css" rel="stylesheet">
-  <!-- Font Awesome Icons -->
   <!-- Google Font -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   <script src="https://use.fontawesome.com/22bebc4b41.js"></script>
@@ -117,8 +115,6 @@
               <li>
                 <div class="year">
                   <div>
-                    <!-- <h4>May 2017 - Jul 2017</h4> -->
-                    <!-- <h4>2017 - 2017</h4> -->
                     <h4>2017 </h4>
                     <span>Adnovation</span>
                   </div>
@@ -133,7 +129,6 @@
               <li>
                 <div class="year">
                   <div>
-                    <!-- <h4>2015 - 2017</h4> -->
                     <h4>2015-2017</h4>
                     <span>Deloitte</span>
                   </div>
@@ -167,21 +162,6 @@
                   </div>
                   <!-- end Skill 3 -->
                 </div><!-- end row -->
-<!--                  <br>
-                 <div class="row">
-                  <div class="col-12 col-sm-4 skill-bar">
-                    <input type="text" value="0" data-number="80" class="dial">
-                    <h4>Ruby on Rails</h4>
-                  </div>
-
-                  <div class="col-12 col-sm-4 skill-bar">
-                    <input type="text" value="0" data-number="70" class="dial">
-                    <h4>Meteor</h4>
-                  </div>
-                  <div class="col-12 col-sm-4 skill-bar">
-                    <input type="text" value="0" data-number="55" class="dial">
-                    <h4>Chatbots</h4>
-                  </div> -->
                   <!-- end Skill 3 -->
                 </div><!-- end row -->
               </div>
@@ -276,7 +256,6 @@
             </ul><!-- end Contact Info -->
             <!-- Contact Form -->
             <div class="contact-form">
-              <!-- <form id="contactform" method="post" enctype="text/plain"> -->
                 <form action="https://formspree.io/j0a0.silva.kle@gmail.com"
                 method="POST">
 
@@ -296,18 +275,10 @@
 
                 <div class="input-style">
                   <button type="submit" id="send-email" value="Send">Send Message</button>
-                  <!-- <input type="submit" id="send-email" value="Send"> -->
-                  <!-- <button type="submit" id="send-email" class="btn btn-default">Send Message</button> -->
                 </div>
 
                 <div class="input-style">
-                  <!-- <input type="submit" id="send-email" value="Send Message"> -->
                 </div>
-                <!-- <button type="submit" >Send Message</button> -->
-<!--                 <div class="submit-result">
-                  <p id="success">Your Message has been sent!</p>
-                  <p id="error">Something went wrong, go back and try again!</p>
-                </div> -->
               </form>
             </div>
 
@@ -372,21 +343,42 @@
     <!-- end Footer -->
 
     <!-- ===== JAVASCRIPTS ===== -->
-    <!-- contact form -->
-    <!-- <script type="text/javascript" src="public/js/contact-form.js" defer></script> -->
+    <script>
+      // const loadStyleSheet = (src) => {
+      //   if (document.createStyleSheet) {
+      //     document.createStyleSheet(src);
+      //   } else {
+      //     const stylesheet = document.createElement('link');
+      //     stylesheet.href = src;
+      //     stylesheet.rel = 'stylesheet';
+      //     stylesheet.type = 'text/css';
+      //     document.getElementsByTagName('head')[0].appendChild(stylesheet);
+      //   }
+      // }
+
+      const loadScript = (src) => {
+        const scriptjs = document.createElement('script');
+          scriptjs.src = src;
+          scriptjs.async = true;
+          scriptjs.type = 'text/javascript';
+          document.getElementsByTagName('body')[0].appendChild(scriptjs);
+      }
+
+      window.onload = function () {
+        console.log('good time to load secundary css');
+        // loadScript("https://code.jquery.com/jquery-1.12.4.min.js");
+        loadScript("js/bootstrap.min.js");
+        loadScript("js/popper.min.js");
+        loadScript("js/theme-plugins.min.js");
+        loadScript("js/scripts.min.js");
+      }
+
+    </script>
     <!-- jQuery Library -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <!-- load own carousel-->
-    <!-- <script src="js/owl.carousel.min.js"></script> -->
     <!-- Popper Library -->
-    <script src="js/popper.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
     <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Theme Plugins -->
-    <script src="js/theme-plugins.min.js"></script>
-    <!-- Custom Scripts -->
-    <script src="js/scripts.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
   </body>
   </html>
