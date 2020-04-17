@@ -34,14 +34,11 @@
   <!-- ===== STYLESHEETS ===== -->
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Preloader -->
   <!-- Main styles -->
   <link href="css/styles_2.css" rel="stylesheet">
   <!-- Responsive styles -->
-  <link href="css/responsive.css" rel="stylesheet">
   <!-- Google Font -->
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-  <script src="https://use.fontawesome.com/22bebc4b41.js"></script>
+  <!-- <script src="https://use.fontawesome.com/22bebc4b41.js"></script> -->
   <script type="text/javascript" async>
     var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-110055481-1"]),_gaq.push(["_trackPageview"]),function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();
   </script>
@@ -344,21 +341,22 @@
 
     <!-- ===== JAVASCRIPTS ===== -->
     <script>
-      // const loadStyleSheet = (src) => {
-      //   if (document.createStyleSheet) {
-      //     document.createStyleSheet(src);
-      //   } else {
-      //     const stylesheet = document.createElement('link');
-      //     stylesheet.href = src;
-      //     stylesheet.rel = 'stylesheet';
-      //     stylesheet.type = 'text/css';
-      //     document.getElementsByTagName('head')[0].appendChild(stylesheet);
-      //   }
-      // }
+      const loadStyleSheet = (src) => {
+        if (document.createStyleSheet) {
+          document.createStyleSheet(src);
+        } else {
+          const stylesheet = document.createElement('link');
+          stylesheet.href = src;
+          stylesheet.rel = 'stylesheet';
+          stylesheet.type = 'text/css';
+          document.getElementsByTagName('head')[0].appendChild(stylesheet);
+        }
+      }
 
       const loadScript = (src) => {
         const scriptjs = document.createElement('script');
           scriptjs.src = src;
+          scriptjs.defer = true;
           scriptjs.type = 'text/javascript';
           document.getElementsByTagName('body')[0].appendChild(scriptjs);
       }
@@ -366,18 +364,21 @@
       window.onload = function () {
         console.log('good time to load secundary css');
         // loadScript("https://code.jquery.com/jquery-1.12.4.min.js");
-        loadScript("js/bootstrap.min.js");
+        loadScript("https://use.fontawesome.com/22bebc4b41.js");
+
         loadScript("js/popper.min.js");
+        loadScript("js/bootstrap.min.js");
         loadScript("js/theme-plugins.min.js");
         loadScript("js/scripts.min.js");
+
+        // loadStyleSheet("css/bootstrap.min.css");
+
+        loadStyleSheet("css/responsive.css");
+        loadStyleSheet("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
       }
 
     </script>
     <!-- jQuery Library -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <!-- Popper Library -->
-    <!-- <script src="js/popper.min.js"></script> -->
-    <!-- Bootstrap -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
   </body>
   </html>
