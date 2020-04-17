@@ -212,7 +212,7 @@ li {
     position: relative;
     top: 0;
     left: 0;
-    background: url(../images/coffee_back_13.jpg) top center no-repeat fixed;
+    background: url(../images/coffee_back_12.jpg) top center no-repeat fixed;
     background-size: cover;
     width: 100%;
     height: 100%}
@@ -231,9 +231,10 @@ li {
 }
 .home-box img {
     width: 200px;
-    height: 200px;
+    max-width: 30%;
+    height: auto;
     margin-bottom: 20px;
-    border-radius: 50%;
+    border-radius: 10%;
     /*-webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .5);*/
     box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .3);
 }
