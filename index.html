@@ -359,12 +359,9 @@
       const loadScript = (src) => {
         const scriptjs = document.createElement('script');
           scriptjs.src = src;
-          scriptjs.async = true;
           scriptjs.type = 'text/javascript';
           document.getElementsByTagName('body')[0].appendChild(scriptjs);
       }
-
-    
 
       window.onload = function () {
         console.log('good time to load secundary css');
