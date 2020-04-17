@@ -295,9 +295,6 @@ li {
     font-style: italic;
 }
 .skills-background {
-    /*background: url(../images/coffee_back_14.jpg) center center no-repeat; */
-    /*background: url(../images/coffee_back_15.jpg) center center no-repeat;*/
-    /*background: url(../images/coffee_back_16.jpg) center center no-repeat;*/
     background: url(../images/coffee_back_17.jpg) center center no-repeat;
     background-size: cover;
     padding: 0;
