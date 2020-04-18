@@ -34,26 +34,26 @@ body {
     margin: 0;
     padding: 0;
     color: #464646;
-    font: 300 13px 'Open Sans', sans-serif;
+    font: 300 13px 'Open Sans';
 }
 h1, h2, h3, h4 {
     color: #141414;
 }
 h1 {
-    font: 400 32px 'Open Sans', sans-serif;
+    font: 400 32px 'Open Sans';
 }
 h2 {
-    font: 600 20px 'Open Sans', sans-serif;
+    font: 600 20px 'Open Sans';
 }
 h3 {
-    font: 400 18px 'Open Sans', sans-serif;
+    font: 400 18px 'Open Sans';
 }
 .home-background p, .nav .nav-item, .section-title, h4 {
     letter-spacing: 1px;
 }
 h4 {
     margin: 0 0 10px;
-    font: 600 13px 'Open Sans', sans-serif;
+    font: 600 13px 'Open Sans';
 }
 a:hover {
     text-decoration: none;
@@ -303,7 +303,7 @@ li {
     padding: 0 15px;
 }
 .skill-bar input[type=text] {
-    font: 300 20px "Open Sans", sans-serif;
+    font: 300 20px "Open Sans";
     letter-spacing: 1px;
 }
 .skill-bar h4 {
