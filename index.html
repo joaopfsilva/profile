@@ -92,7 +92,7 @@
 
               <div>
                 <h4>Software Engineeer</h4>
-                  <p>Develop new backend, frontend functionalities and API integrations using Ruby on Rails, Stimulus and Javascript. Responsible for the full stack, security, performance, roadmap.</p>
+                  <p>Develop new backend(+++) and frontend(+) functionalities and API integrations using Ruby on Rails, Stimulus and Javascript. Responsible for the full stack, security, performance, roadmap. Technologies: Ruby on Rails 5.2, Stimulus, ES6, Rest APIs, Docker, AWS, Google Analytics.</p>
                 </div>
             </li>
             <!-- Experience box 1 -->
@@ -106,7 +106,7 @@
 
               <div>
                 <h4>Ruby on Rails Developer</h4>
-                  <p>Implementation of new functionalities related with back-end: +++ and front-end: +. Speed improvements in MySQL database. Increase performance and fix issues in the API for the mobile app. Working on algorithms for recommendation systems and integration of Rails with React. Technologies: Rails 4.2, APIs, payment systems, VPS, deployments, Mixpanel, Google Analytics, Oauth, ...</p>
+                  <p>Implementation of new functionalities related with back-end(+++) and front-end(+). Speed improvements in MySQL database. Increase performance and fix issues in the API for the mobile app. Working on algorithms for recommendation systems and integration of Rails with React. Technologies: Rails 5.2, APIs, MangoPay, VPS, Capistrano, Mixpanel, Google Analytics, Oauth, ...</p>
                 </div>
             </li>
             <li>
@@ -143,12 +143,12 @@
                 <div class="row">
                   <!-- Skill 1 -->
                   <div class="col-sm-12 col-sm-4 skill-bar">
-                    <input type="text" value="0" data-number="60" class="dial">
+                    <input type="text" value="0" data-number="50" class="dial">
                     <h4>Back-End</h4>
                   </div>
                   <!-- Skill 2 -->
                   <div class="col-sm-12 col-sm-4 skill-bar">
-                    <input type="text" value="0" data-number="25" class="dial">
+                    <input type="text" value="0" data-number="35" class="dial">
                     <h4>APIs</h4>
                   </div>
                   <!-- Skill 3 -->
@@ -218,25 +218,17 @@
 
           </div><!-- end Resume/Experience -->
           <!-- Hire me -->
-          <div class="col-sm-12 col-lg-6 order-lg-1 hire-background">
+          <div id="contactMeBlock" class="col-sm-12 col-lg-6 order-lg-1 hire-background">
             <div class="white-layer">
               <div class="middle-content">
-                <h3>Feel free to contact me!</h3>
-                <a href="#services">Contact Me</a>
+                <h2>Feel free to contact me!</h2>
+                <h4>I am interested on joining projects with social and/or environmental impact.</h4>
+                <a href="#contactForm" id="showContactForm">Contact Me</a>
               </div>
             </div>
           </div>
-          <!-- end Hire me -->
-        </div><!-- end row -->
-      </div><!-- end container -->
-    </section>
-    <!-- end Experience -->
 
-    <!-- Services -->
-    <section id="services">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 col-lg-6 order-lg-2 section-background">
+          <div id="contactForm" class="col-sm-12 col-lg-6 order-lg-1 section-background" style="display: none">
             <h2 class="section-title">Get In Touch</h2>
             <!-- Contact Info -->
             <ul class="info">
@@ -252,8 +244,8 @@
             </ul><!-- end Contact Info -->
             <!-- Contact Form -->
             <div class="contact-form">
-                <form action="https://formspree.io/j0a0.silva.kle@gmail.com"
-                method="POST">
+              <form action="https://formspree.io/j0a0.silva.kle@gmail.com"
+              method="POST">
 
                 <div class="input-style">
                   <input type="text" name="name" placeholder="Name">
@@ -277,39 +269,14 @@
                 </div>
               </form>
             </div>
+          </div>
 
-          </script>
-          <!-- end Contact Form -->
-        </div>
-          <!-- Facts -->
-          <div class="col-sm-12 col-lg-6 order-lg-2 facts-background">
-            <div class="dark-layer">
-              <div class="middle-content">
-                <div class="row">
-                  <!-- Fact box 1 -->
-                  <div class="fact-box col-sm-12 col-sm-4">
-                    <p class="counter">148</p>
-                    <h4>Cups of coffee</h4>
-                  </div>
-                  <!-- Fact box 2 -->
-                  <div class="fact-box col-sm-12 col-sm-4">
-                    <p class="counter">2</p>
-                    <h4>Projects Done</h4>
-                  </div>
-                  <!-- Fact box 3 -->
-                  <div class="fact-box col-sm-12 col-sm-4">
-                    <p class="counter">2</p>
-                    <h4>Happy Clients</h4>
-                  </div>
-                  <!-- end Fact box 3 -->
-                </div><!-- end row -->
-              </div>
-            </div>
-          </div><!-- end Facts -->
+
+          <!-- end Hire me -->
         </div><!-- end row -->
       </div><!-- end container -->
     </section>
-    <!-- end Services -->
+    <!-- end Experience -->
 
     <!-- Footer -->
     <footer>
@@ -358,6 +325,20 @@
         loadStyleSheet("css/responsive.css");
         loadStyleSheet("css/bootstrap_essentials.css");
         loadStyleSheet("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
+
+        const showContactForm = document.getElementById('showContactForm');
+        if(showContactForm) {
+          showContactForm.addEventListener('click', function() {
+            const contactForm = document.getElementById('contactForm');
+            const contactMeBlock = document.getElementById('contactMeBlock');
+
+            if (contactForm) {
+              contactForm.style.display = 'block';
+              contactMeBlock.style.display = 'none';
+            }
+
+          })
+        }
       }
 
     </script>
